@@ -1,0 +1,404 @@
+    /* Basic reset and styling */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+background-color:lightgreen;
+
+ 
+    }
+    
+    hr{
+color:black;
+}
+
+
+    /* Navbar container */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        background-color:#53698f;
+        padding: 10px 20px;
+    }
+
+    /* Navbar links */
+    .navbar a {
+        color: white;
+
+        text-decoration: none;
+
+        padding: 8px 15px;
+        font-size: 20px;
+    }
+.navbar-left:hover{
+color:orange;
+}
+
+    /* Navbar logo */
+    .navbar .logo {
+        font-size: 40px;
+        font-weight:bold;
+        color:lightgreen;
+    }
+
+    /* Links styling */
+    .navbar-links {
+        display: flex;
+        gap: 15px;
+display:flex;
+justify-content:right;
+list-style:none;
+    }
+
+    /* Hover effect for links */
+    .navbar a:hover {
+        background-color: #ddd;
+
+        color:#53698f;
+    }
+
+    /* Search bar styling */
+    .search-bar {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    .search-bar input {
+        border: none;
+        outline: none;
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .search-bar button {
+        background-color: #555;
+        border: none;
+        color:white;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .search-bar button:hover {
+        background-color:red;
+    }
+
+    /* Toggle button for mobile */
+    .navbar .toggle-button {
+        display: none;
+    }
+
+    /* Responsive layout for small screens */
+    @media screen and (max-width: 600px) {
+        .navbar-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .navbar a {
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .navbar .toggle-button {
+            display: block;
+            cursor: pointer;
+            color: white;
+            font-size: 20px;
+        }
+
+        .navbar .toggle-button.active + .navbar-links {
+            display: flex;
+        }
+    }
+
+
+
+.content img{
+   background-size:cover;
+background-position:center;
+    
+width:96vw;
+
+}
+
+button:hover{
+    color:red;
+}
+
+body{
+
+padding:10px;
+margin:10px;
+}
+
+
+.heading{
+width:90%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+text-align:center;
+margin:20px auto;
+}
+.heading h1{
+font-size:50px;
+color:#000;
+margin-bottom:25px;
+position:relative;
+justify-content:center;
+}
+.heading h1::after{
+content:"";
+position:absolute;
+width:100%;
+height:4px;
+display:block;
+margin:0 auto;
+background-color:#4caf50;
+}
+.heading h1{
+width:50px;
+height:20px;
+text-align:bottom;
+}
+.heading p{
+font-size:18px;
+color:#666;
+margin-bottom:35px;
+text-align:center;
+justify-content:center;
+}
+.container{
+width:90%;
+margin:0 auto;
+padding:10px 20px;
+}
+.about{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+.about-image{
+flex:1;
+margin-right:40px;
+overflow:hidden;
+}
+.about-image img{
+max-width:90%;
+height:auto;
+display:block;
+transition:0.5s ease;
+}
+.about-content{
+flex:1;
+}
+.about-image:hover img{
+transform:scale(1,2);
+}
+
+.about-content{
+font-size:20px;
+margin-bottom:15px;
+font-family: "Julius Sans One", serif;
+color:#333;
+}
+.about-content p{
+font-size:18px;
+font-family: "Roboto", sans-serif;
+line-height:1.5;
+color:#666;
+}
+.about-content .read-more{
+display:inline-block;
+padding:10px 20px;
+background-color:#4caf50;
+color:#fff;
+text-decoration:none;
+border-radius:25px;
+margin-top:15px;
+transition:0.3s ease;
+align-items:right;
+justify-content:right;
+}
+.about-content .read-more{
+font-size:16px;
+}
+
+.about-content .read-more:hover{
+jusify-content:left;
+background-color:#3e8e41;
+}
+
+
+.items{
+display:grid;
+grid-template-columns: repeat(3, 1fr);
+padding:30px 20px;
+grid-column-gap:20px;
+grid-row-gap:30px;
+}
+
+.items img{
+width:100%;
+height:300px;
+object-fit:cover;
+cursor:pointer;
+transition:0.2s ease;
+}
+
+.items img:hover{
+transform:scale(1.04);
+}
+
+.items h4{
+padding:5px;
+text-align:center;
+}
+
+.item button{
+padding:5px 30px;
+border:none;
+outline:none;
+background-color:green;
+color:white;
+cursor:pointer;
+border-radius:4px;
+font-size:20px;
+display:block;
+margin:0 auto;
+transition:0.2s all;
+}
+
+.item button:hover{
+transform:scale(1.08);
+}
+
+@media screen and (max-width: 768px){
+.items{
+grid-template-columns:repeat(1,1fr);
+}
+}
+
+
+
+.contact{
+min-height:100vh;
+min-width: 100vh;
+background-color:#e8f0fe;
+padding:50px;
+text-align:center;
+}
+.container{
+max-resolution: width 100%;
+width:100%;
+margin-bottom:100px;
+
+margin:0 auto;
+}
+
+
+.container h2{
+font-size:36px;
+color:#333;
+}
+
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+grid-gap:30px;
+}
+
+.contact-form{
+text-align:left;
+}
+.item:hover{
+    transition:0.5s ease;
+}
+
+.contact-form h3{
+font-size:24px;
+margin-bottom:20px;
+color:#333;
+}
+
+.form-group{
+margin-bottom:20px;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+border-radius:8px;
+border:none;
+background-color:#f8f9fa;
+color:#333;
+}
+
+input:focus,
+textarea:focus{
+outline:none;
+box-shadow:0 0 8px  3bbb;
+}
+
+button{
+display:inline-block;
+padding:12px 24px;
+background-color:#4caf50;
+color:#fff;
+border:none;
+cursor:pointer;
+transition:0.3s ease;
+}
+
+
+button:hover{
+background-color:#45a049;
+}
+
+.contact-infor{
+text-align:left;
+}
+
+.contact-info h3{
+font-size:24px;
+margin-bottom:20px;
+color:#333;
+
+}
+
+.contact-info p{
+margin-bottom:10px;
+color:#555;
+}
+
+.contact-info i{
+
+color:#4caf50;
+margin-right:10px;
+}
+
+@media screen and(max-width:768px){
+.container{
+padding:20px;
+}
+.contact-wrapper{
+grid-template-columns:1fr;
+
+}
+
+}
+
